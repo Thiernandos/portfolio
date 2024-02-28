@@ -76,9 +76,43 @@ body {
 .home-content {
     max-width: 600px;
 }
+.lettre {
+    font-size: 20px;  
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    
+    animation: flash 1.2s linear infinite;
+}
+@keyframes flash{
+    0%{
+        color: #0ef;
+        text-shadow:  0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+        ;
+    }
+    50%{
+        color:whitesmoke;
+        text-shadow: none;
+    }
+    100%{
+        color: #0ef;
+        text-shadow:0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+        ;
+    }
+}
+.lettre:nth-child(1){animation-delay: 0.1s;}
+.lettre:nth-child(2){animation-delay: 0.2s;}
+.lettre:nth-child(3){animation-delay: 0.3s;}
+.lettre:nth-child(4){animation-delay: 0.4s;}
+.lettre:nth-child(5){animation-delay: 0.5s;}
+.lettre:nth-child(6){animation-delay: 0.6s;}
+.lettre:nth-child(7){animation-delay: 0.7s;}
+.lettre:nth-child(8){animation-delay: 0.8s;}
+.lettre:nth-child(9){animation-delay: 0.9s;}
+.lettre:nth-child(10){animation-delay:1s;}
 
-.home-content h1 {
-    font-size: 56px;
+ .home-content h1 {
+    font-size: 46px;
     font-weight: 700;
     margin: -3px 0;
     letter-spacing: 5px;
@@ -87,7 +121,7 @@ body {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
-}
+} */
 
 .home-content h3 {
     font-size: 32px;
