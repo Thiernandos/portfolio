@@ -197,6 +197,7 @@ body {
 .img {
     display: inline-block;
     left: 55%;
+    top:10% ;
     bottom: 15%;
     margin-right: 5%;
     padding: 0;
@@ -210,7 +211,7 @@ body {
 }
 
 .responsive {
-    width: 100%;
+    width: 85%;
     height: auto;
     border-top-left-radius: 251px;
     border-top-right-radius: 251px;
@@ -247,7 +248,7 @@ body {
     width: 100%;
     height: auto;
     max-width: 492px;
-    max-height: 492px;
+    max-height: 1000px;
     border-radius: 90px;
     /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
     border: #0ef 5px solid;
