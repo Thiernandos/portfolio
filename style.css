@@ -1313,4 +1313,7 @@ body {
     .top i{
         color: #000;
     }
-}
+    }
+    #map { height: 400px;    
+        
+    }
