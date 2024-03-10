@@ -6,7 +6,12 @@
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
+:root{
+    --blue: #e5ff00;
+    --white: #fff;
+    --shadow-color25:0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
+    --shadow-color200: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
 body {
     color: white;
     background-color: black;
@@ -31,7 +36,7 @@ body {
 .logo {
     position: relative;
     font-size: 25px;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -43,7 +48,7 @@ body {
 .navbar a {
     display: inline-block;
     font-size: 25px;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -54,7 +59,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #0ef;
+    color:var(--blue);
     text-decoration: underline;
 }
 
@@ -86,18 +91,16 @@ body {
 }
 @keyframes flash{
     0%{
-        color: #0ef;
-        text-shadow:  0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-        ;
+        color:var(--blue);
+        text-shadow:  var(--shadow-color25);
     }
     50%{
         color:whitesmoke;
         text-shadow: none;
     }
     100%{
-        color: #0ef;
-        text-shadow:0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-        ;
+        color: var(--blue);
+        text-shadow:var(--shadow-color25);
     }
 }
 .lettre:nth-child(1){animation-delay: 0.1s;}
@@ -140,7 +143,7 @@ body {
 }
 
 .home-content h4 span {
-    color: #0ef;
+    color: var(--blue);
     font-size: 32px;
     font-weight: 700;
 }
@@ -157,10 +160,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid var(--blue);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: var(--blue);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
@@ -169,15 +172,15 @@ body {
 }
 
 .home-sci a:hover {
-    background: #0ef;
+    background: var(--blue);
     color: #000;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px var(--blue);
 }
 
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: var(--blue);
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
@@ -191,8 +194,7 @@ body {
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
-}
+    box-shadow: var(--shadow-color200)}
 
 .img {
     display: inline-block;
@@ -251,7 +253,7 @@ body {
     max-height: 1000px;
     border-radius: 90px;
     /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
-    border: #0ef 5px solid;
+    border: var(--blue) 5px solid;
 }
 
 .about-text {
@@ -264,7 +266,7 @@ body {
 }
 
 .about-text h2 span {
-    color: #0ef;
+    color: var(--blue);
 }
 
 .about-text p {
@@ -280,7 +282,7 @@ body {
 .abtbtn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: var(--blue);
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
@@ -291,8 +293,7 @@ body {
 }
 
 .abtbtn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
-}
+    box-shadow: var(--shadow-color200)}
 
 
 /* Skills */
@@ -308,7 +309,7 @@ body {
 }
 
 .subtitle span {
-    color: #0ef;
+    color: var(--blue);
 }
 
 .sec {
@@ -379,7 +380,7 @@ body {
 
 .Technical-bars .bar .progress-line span {
     height: 100%;
-    background-color: #0ef;
+    background-color: var(--blue);
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -414,7 +415,7 @@ body {
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
-    color: #fff;
+    color: var(--white);
     font-size: 12px;
     border-radius: 3px;
     top: -28px;
@@ -499,7 +500,7 @@ body {
 
 .path {
     stroke-width: 10;
-    stroke: #0ef;
+    stroke: var(--blue);
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -547,7 +548,7 @@ body {
     opacity: 0;
 }
 
-/*projects*/
+/*projects -----------------*/
 #Projects{
     background-color: #000;
 }
@@ -566,7 +567,7 @@ body {
 }
 
 .main-text h2 span {
-    color: #0ef;
+    color: var(--blue);
 }
 
 .serv-container {
@@ -600,7 +601,7 @@ body {
     max-height: 300px;
     height: 0;
     opacity: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), #0ef);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), var(--blue));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -631,7 +632,7 @@ body {
 }
 
 .layer i {
-    color: #0ef;
+    color: var(--blue);
     margin-top: 20px;
     font-size: 20px;
     background: #000;
@@ -642,6 +643,7 @@ body {
     justify-content: center;
     border-radius: 50%;
 }
+
 
 .row:hover img {
     transform: scale(1.01);
@@ -666,7 +668,7 @@ body {
 }
 
 .sub-title span {
-    color: #0ef;
+    color: var(--blue);
 }
 
 .prj-list {
@@ -683,9 +685,9 @@ body {
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    transition:transform 0.5s;
     /*box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;*/
-    border: #0ef 5px solid;
+    border: var(--blue) 5px solid;
 }
 
 .container {
@@ -696,6 +698,7 @@ body {
 .prj-list div i {
     font-size: 50px;
     margin-bottom: 30px;
+    color: var(--blue);
 }
 
 .prj-list div h2 {
@@ -715,7 +718,7 @@ body {
 .read {
     display: inline-block;
     padding: 12px 20px;
-    background: #0ef;
+    background: var(--blue);
     border-radius: 40px;
     font-size: 16px;
     color: #081b29;
@@ -728,8 +731,7 @@ body {
 }
 
 .read:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
-}
+    box-shadow: var(--shadow-color200);}
 
 .prj-list div:hover {
     transform: translateY(-2px);
@@ -761,7 +763,7 @@ body {
 }
 
 .contact-text h2 span {
-    color: #0ef;
+    color: var(--blue);
 }
 
 .contact-text h4 {
@@ -790,7 +792,7 @@ body {
 
 .contact-list i {
     display: inline-block;
-    color: #0ef;
+    color: var(--blue);
     font-size: 20px;
     font-weight: 600;
     transition: all .40s ease;
@@ -805,19 +807,19 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid var(--blue);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: var(--blue);
     text-decoration: none;
     margin: 0px 15px 0px 0;
     opacity: 1;
 }
 
 .contact-icons i:hover {
-    background: #0ef;
+    background: var(--blue);
     color: #000;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20pxvar(--blue);
 }
 
 .last-text p{
@@ -845,15 +847,14 @@ body {
 
 .top i{
     color: black;
-    background: #0ef;
+    background: var(--blue);
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
 }
 
 .top i:hover {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,0 0 200px cyan;
+    box-shadow: var(--shadow-color200);
 }
 
 
@@ -1042,8 +1043,7 @@ body {
         margin-left: 0;
     }
     .btn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+        box-shadow: var(--shadow-color25);}
     /*about*/
     .about{
         padding-bottom: 20px;
@@ -1062,8 +1062,7 @@ body {
         text-align: left;
     }
     .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+        box-shadow: var(--shadow-color25);}
 
     /*skills*/
     .subtitle{
@@ -1197,8 +1196,7 @@ body {
         font-weight: 200;
     }
     .btn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+        box-shadow: var(--shadow-color25); }
     .img{
         max-width: 300px;
         position: relative;
@@ -1228,8 +1226,7 @@ body {
         text-align: left;
     }
     .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    }
+        box-shadow: var(--shadow-color25);}
 
     /*skills*/
     .subtitle{
@@ -1314,6 +1311,6 @@ body {
         color: #000;
     }
     }
-    #map { height: 400px;    
+    #map { height: 400px;   
         
     }
