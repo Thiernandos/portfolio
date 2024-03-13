@@ -9,8 +9,9 @@
 :root{
     --blue: #e5ff00;
     --white: #fff;
-    --shadow-color25:0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
-    --shadow-color200: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    /* 0ef  cyan e7f00d*/
+    --shadow-color25:0 0 5px #ff0, 0 0 10px #ff0, 0 0 15pc #ff0, 0 0 20px #ff0, 0 0 25px #ff0;
+    --shadow-color200: 0 0 5px rgb(9, 10, 10), 0 0 25px #ff0, 0 0 50pc #ff0, 0 0 100px #ff0, 0 0 200px #ff0;
 }
 body {
     color: white;
