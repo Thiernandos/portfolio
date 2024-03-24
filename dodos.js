@@ -33,7 +33,7 @@ function findMyCoordinates() {
         navigator.geolocation.getCurrentPosition((position) => {
             // Set the map view to the user's current location
             map.setView([position.coords.latitude, position.coords.longitude], 18);
-            map.marker([position.coords.latitude, position.coords.longitude]);
+            // map.marker([position.coords.latitude, position.coords.longitude]);
      
         }, (err) => {
             console.error(err.message);

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
+
 }
 :root{
     --blue: #e5ff00;
@@ -71,7 +72,7 @@ body {
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: black;
+  
     background-size: cover;
     background-position: center;
     display: flex;
@@ -80,7 +81,17 @@ body {
 }
 
 .home-content {
-    max-width: 600px;
+   
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    /*align-items: center;*/
+    /*gap: 1.5rem;*/
+    width: 100%;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 70px 5% 0;
+    /* display: grid;
+    max-width: 600px; */
 }
 .lettre {
     font-size: 20px;  
@@ -116,7 +127,7 @@ body {
 .lettre:nth-child(10){animation-delay:1s;}
 
  .home-content h1 {
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 700;
     margin: -3px 0;
     letter-spacing: 5px;
@@ -215,17 +226,16 @@ body {
 
 .responsive {
     width: 85%;
+    max-width: 500px; ;
     height: auto;
-    border-top-left-radius: 251px;
-    border-top-right-radius: 251px;
-    border-bottom-left-radius: 251px;
-    border-bottom-right-radius: 251px;
+    border-radius: 251px;
+    /* border: var(--blue) 5px solid; */
 }
 
 /*about*/
 
 .about {
-    background-color: black;
+   
     display: grid;
     grid-template-columns: repeat(2, .5fr);
     /*align-items: center;*/
@@ -1324,4 +1334,5 @@ body {
         height: 400px;
         width: 90%;
         border-radius: 5px;
+        border: var(--blue) 5px solid;
        }
