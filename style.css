@@ -355,8 +355,11 @@ body {
 }
 
 .Technical-bars .bar {
+    display: flex;
     margin-top: 40px 0;
     padding: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Technical-bars .bar:first-child {
@@ -376,7 +379,9 @@ body {
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+    text-shadow:  var(--shadow-color25);
 }
+
 
 .Technical-bars .bar .progress-line {
     position: relative;
@@ -397,6 +402,7 @@ body {
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
+    
 }
 
 .progress-line.html span {
